@@ -26,38 +26,47 @@ createCard(day1);
 $('.todo1').click(function() {
     let entry = prompt("What do you have to do?");
     localStorage.setItem("data", JSON.stringify(entry));
-    // JSON.parse(localStorage.getItem('data'));
-    $('.todo1').append(`${JSON.parse(localStorage.getItem('data'))}`);
+    $('.todo1').append(`${JSON.parse(localStorage.getItem('data'))}`) && $('.todo1').attr('id', 'green') && $('.todo1').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
+    //
+    // doesn't keep the value appended after refresh but when " console.log(JSON.parse(localStorage.getItem('data')))" " 
+    // the value is still stored. WHYYY???
+    //
 })
+
+$('.todo1').siblings(":last").click(function() {
+    $('.todo1').attr('id', 'red');
+})
+
 createCard(day2);
 $('.todo2').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo2').append(`${entry}`);
+    $('.todo2').append(`${entry}`) && $('.todo2').attr('id', 'green') && $('.todo2').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
+
 createCard(day3);
 $('.todo3').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo3').append(`${entry}`);
+    $('.todo3').append(`${entry}`) && $('.todo3').attr('id', 'green') && $('.todo3').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
 createCard(day4);
 $('.todo4').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo4').append(`${entry}`);
+    $('.todo4').append(`${entry}`) && $('.todo4').attr('id', 'green') && $('.todo4').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
 createCard(day5);
 $('.todo5').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo5').append(`${entry}`);
+    $('.todo5').append(`${entry}`) && $('.todo5').attr('id', 'green') && $('.todo5').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
 createCard(day6);
 $('.todo6').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo6').append(`${entry}`);
+    $('.todo6').append(`${entry}`) && $('.todo6').attr('id', 'green') && $('.todo6').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
 createCard(day7);
 $('.todo7').click(function () {
     let entry = prompt("What do you have to do?");
-    $('.todo7').append(`${entry}`);
+    $('.todo7').append(`${entry}`) && $('.todo7').attr('id', 'green') && $('.todo7').siblings(":last").append(`<b style="font-size: 20px">Click when done</b>`);
 })
 
 // $(`.todo${todo}`).click(function() {

@@ -14,6 +14,18 @@
     background-color: lightblue;
 }
 
+#green {
+    background-color: lightgreen;
+}
+
+#red {
+    background-color: lightcoral;
+}
+
+#done {
+    background-color: lightgray;
+}
+
 .todo-card {
     font-size: 25px;
 }
