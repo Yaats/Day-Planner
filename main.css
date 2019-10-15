@@ -1,0 +1,27 @@
+.jumbotron {
+    text-align: center;
+}
+
+.card {
+    border: 1px gray solid;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 10px;
+}
+
+#blue {
+    background-color: lightblue;
+}
+
+#green {
+    background-color: lightgreen;
+}
+
+#red {
+    background-color: lightcoral;
+}
+
+#done {
+    background-color: lightgray;
+}
